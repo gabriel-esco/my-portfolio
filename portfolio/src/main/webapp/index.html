@@ -7,13 +7,45 @@
     <script src="script.js"></script>
   </head>
   <body>
-    <div id="content">
-      <h1>My Portfolio</h1>
-      <p>This is my portfolio.</p>
-      <p>Click <a href="/hello">here</a> to see content created by server code.</p>
-      <p>Click here to get a random message:</p>
-      <button onclick="addRandomGreeting()">Hello</button>
-      <div id="greeting-container"></div>
+    <div class="topnav">
+        <a class="active" href="#">Gabriel Escobar</a>
+        <a href="#">About Me</a>
+        <a href="#projects">Projects</a>
+        <div class="topnav-right">
+            <a href="https://www.linkedin.com/in/gabriel-escobar-saade-13b8b01a0/" target="_blank">LinkedIn</a>
+            <a href="https://github.com/gabriel-esco" target="_blank">GitHub</a>
+        </div>
+    </div>
+    <div class="row">
+    <div class="column">
+        <img id="pic" src="/images/gabriel.JPG" / alt="picture of me">
+    </div>
+    <div class="column">
+        <h1>Gabriel Escobar</h1>
+        <h3>Industrial Engineering and Software Development</h3> 
+        <div id="aboutme">
+        <p>My name is Gabriel Escobar, and I'm a second year student at the University of Toronto
+            studying Industrial Engineering. I am passionate about Artificial Intelligence and 
+            Machine Learning, and I love computer science.
+        </p>
+        <button onclick="addRandomGreeting()">Hello</button>
+        <div id="greeting-container"></div>
+        <p>I was born in El Salvador, spent my high school years
+            in Costa Rica, and now I live in Toronto, Ontario. 
+        </p>
+    </div>
+    <div id="projects">
+        <h1>Projects</h1>
+        <p>We all know and love the Snake game. In this project, I 
+            used PyGame to create a Snake game from scratch, as seen below.
+            To take this project a step further, I created an AI that plays
+            the game, improving with each trial (using reinforcement learning).
+            Here's a look at what the AI looks like over 100 trials into its learning.
+        </p> 
+        <video width="640" height="480">
+            <source src="/images/snakeAI.mp4" type="video/mp4" controls="controls">
+        </video>
+    </div>
     </div>
   </body>
 </html>
