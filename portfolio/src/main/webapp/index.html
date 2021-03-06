@@ -2,9 +2,12 @@
 <html>
   <head>
     <meta charset="UTF-8">
-    <title>My Portfolio</title>
+    <title>Gabriel Escobar</title>
     <link rel="stylesheet" href="style.css">
+    <script src="typed_copy.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.11/typed.min.js"></script>
     <script src="script.js"></script>
+
   </head>
   <body>
     <div class="topnav">
@@ -16,23 +19,28 @@
             <a href="https://github.com/gabriel-esco" target="_blank">GitHub</a>
         </div>
     </div>
-    <div class="row">
-    <div class="column">
-        <img id="pic" src="/images/gabriel.JPG" / alt="picture of me">
+    
+    </div> 
+    <div class="container"></div>
+    <div class="intro">
+        <div class="name">
+            <h1>Gabriel Escobar</h1>
+        </div>
+        <div class="rotatedtext">
+            <h3>I am a <span class="typing"></span></h3>
+        </div>
+        <img id="pic" src="/images/gabriel3.jpeg" / alt="Picture of me">
+        <p><br><br><br></p>
     </div>
-    <div class="column">
-        <h1>Gabriel Escobar</h1>
-        <h3>Industrial Engineering and Software Development</h3> 
-        <div id="aboutme">
-        <p>My name is Gabriel Escobar, and I'm a second year student at the University of Toronto
-            studying Industrial Engineering. I am passionate about Artificial Intelligence and 
-            Machine Learning, and I love computer science.
-        </p>
-        <button onclick="addRandomGreeting()">Hello</button>
-        <div id="greeting-container"></div>
-        <p>I was born in El Salvador, spent my high school years
-            in Costa Rica, and now I live in Toronto, Ontario. 
-        </p>
+    
+    <div class="aboutme">
+        <img id="torontopic" src="/images/toronto.jpg" / alt="Picture of Toronto"> 
+        <div class="aboutmetitle">About Me</div>
+        <div class="aboutmecontent">My name is Gabriel Escobar. I'm a second year student at the University of Toronto
+                studying Industrial Engineering. I am passionate about Artificial Intelligence and 
+                Machine Learning, and I love computer science. <br> I was born in El Salvador, spent my high school years
+                in Costa Rica, and now I live in Toronto, Ontario. 
+        </div>        
     </div>
     <div id="projects">
         <h1>Projects</h1>
@@ -45,7 +53,6 @@
         <video width="640" height="480">
             <source src="/images/snakeAI.mp4" type="video/mp4" controls="controls">
         </video>
-    </div>
     </div>
   </body>
 </html>

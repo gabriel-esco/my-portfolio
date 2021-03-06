@@ -15,6 +15,8 @@
 /**
  * Adds a random greeting to the page.
  */
+import Typed from'typed_copy.js';
+
 function addRandomGreeting() {
   const greetings =
       ['Hello world!', '¡Hola Mundo!', '你好，世界！', 'Bonjour le monde!'];
@@ -25,4 +27,11 @@ function addRandomGreeting() {
   // Add it to the page.
   const greetingContainer = document.getElementById('greeting-container');
   greetingContainer.innerText = greeting;
-}
+};
+
+var typed = new Typed('.typing', {
+    strings: ["Software Development", "Artificial Intelligence", "Machine Learning", "Optimization Research", "Web Design"],
+    typespeed: 100,
+    backspeed: 60,
+    loop: true
+});

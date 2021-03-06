@@ -1,5 +1,6 @@
 body {
-    background-image:linear-gradient(#000d1a, #000000) 
+    background-color: #fff3e6; 
+    font-family: optima, sans-serif;
 }
 .home {
     position: relative;
@@ -7,19 +8,73 @@ body {
     height: 120px;
 }
 
-.centered {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: white;
-    font-size: 80px;
-    font-family: "Lucida Console", "Courier New", monospace;
+p {
+    font-family: optima, sans-serif;
+    color: #994d00;
 }
 
+/* INTRO */
+h1 {
+    margin: auto;
+    padding: 10px;
+    font-size: 3vw;
+    font-family: optima, sans-serif;
+    color: #994d00;
+    font-weight: 350;
+}
 #pic {
     border-radius: 25px;
+    width: 30%;
+    height: auto;
+    position: relative;
+    left: 30%;
+    box-shadow: -10px 10px 1px #994d00;
+
 }
+.intro .name {
+    position: relative;
+    left: 30%;
+}
+
+.intro .rotatedtext {
+    color: #446600;
+    font-size: 1.3vw;
+    position: relative;
+    left: 26%;
+    display: inline-block;
+    white-space: nowrap;
+    transform-origin: 0 0;
+    transform: rotate(270deg);
+    /* text-align: left; */
+    width: 0;
+    margin: 0;
+}
+
+/* ABOUT ME */
+
+.aboutme{
+    position: relative;
+    text-align: center;
+}
+
+#torontopic {
+    width: 100%;
+    z-index: 0;
+    opacity: 0.4;
+}
+.aboutme .aboutmetitle {
+    position: absolite;
+    top: 5%;
+    left: 16%;
+}
+.aboutme .aboutmecontent {
+    position: relative;
+    top: 5%;
+    left: 10%;
+    font-family: optima, sans-serif;
+    color: #994d00;
+}
+
 ul {
     list-style-type: none;
     margin: 0;
@@ -50,15 +105,17 @@ li a {
 }
 
 .topnav {
-    background-color: #000d1a;
+    background-color: #fff3e6;
     overflow: hidden;
+    font-size: 50px;
+    font-family: optima, sans-serif;
 }
 /* Style the links inside the navigation bar */
 .topnav a {
   float: left;
-  color: #f2f2f2;
+  color: #000066;
   text-align: center;
-  padding: 14px 16px;
+  padding: 21px 24px;
   text-decoration: none;
   font-size: 17px;
 }
@@ -71,7 +128,7 @@ li a {
 
 /* Add a color to the active/current link */
 .topnav a.active {
-  background-color: firebrick;
+  background-color: #994d00;
   color: white;
 }
 
@@ -81,9 +138,9 @@ li a {
 }
 
 .column {
-    float: left;
     width: 30%;
     padding: 5px;
+    display: inline-block;
 }
 .row::after{
     content: "";
@@ -92,18 +149,10 @@ li a {
 }
 
 p {
-    color: white;
+    color:#000033;
+    font-family: optica, sans-serif;
 }
 
 #greeting-container {
   margin-top: 60px;
-}
-
-h1 {
-    margin: auto;
-    width: 50%;
-    padding: 10px;
-    font-size: 80px;
-    font-family: "Lucida Console", "Courier New", monospace;
-    color: firebrick;
 }
