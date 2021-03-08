@@ -32,6 +32,7 @@ h1 {
 
 }
 .intro .name {
+    width: 30%;
     position: relative;
     left: 30%;
 }
@@ -57,22 +58,164 @@ h1 {
     text-align: center;
 }
 
+.imgcontainer {
+    width: cover;
+    overflow: hidden;
+    margin: 0;
+}
 #torontopic {
+    display: block;
+    position: relative;
     width: 100%;
     z-index: 0;
-    opacity: 0.4;
+    opacity: 0.3;
+    margin: -11% 0;
 }
 .aboutme .aboutmetitle {
-    position: absolite;
+    font-size: 3.1vw;
+    color: #4d1a00;
+    position: absolute;
     top: 5%;
-    left: 16%;
+    left: 8%;
 }
-.aboutme .aboutmecontent {
-    position: relative;
-    top: 5%;
-    left: 10%;
+.column {
+    float: left;
+    width: 33.33%;
+    padding: 10px;
+}
+.row::after{
+    content: "";
+    clear: both;
+    display: table;
+}
+.aboutMeText {
+    position: absolute;
+    text-align: left;
+    top: 10%;
+    left: 8%;
+    font-size: 1.2vw;
     font-family: optima, sans-serif;
-    color: #994d00;
+    color: #4d4d4d;
+}
+
+h4 {
+    font-size: 1.6vw;
+    color: #0086b3;
+    background: rgb(196, 108, 108);
+    background: rgba(0, 0, 0, 0.7);
+    padding-left: 40px;
+    padding-right: 40px;
+    border-radius: 10px;
+}
+
+h5 {
+    font-size: 1.2vw;
+}
+
+h6 {
+    font-size: 1vw;
+    font-weight: 100;
+    margin: auto;
+}
+.goal {    
+    height: 32.5%;
+    width: 10%;
+    text-align: left;
+    font-size: 1vw;
+    position: absolute;
+    color: #99e6ff;
+    top: 35%;
+    left: 20%;
+    background: #404040;
+    padding-left: 35px;
+    padding-right: 35px;
+    padding-top: 30px;
+    border-radius: 20px;
+    box-shadow: -10px 10px 1px #8c8c8c;
+}
+.skills {
+    height: 35.5%;
+    width: 10%;
+    position: absolute;
+    color: #99e6ff;
+    top: 35%;
+    left: 43%;
+    background: #404040;
+    padding-left: 35px;
+    padding-right: 35px;
+    border-radius: 20px;
+    box-shadow: -10px 10px 1px #8c8c8c;
+}
+
+.resume {
+    width: 10%;
+    height: 22.5%;
+    text-align: center;
+    font-size: 1.2vw;
+    position: absolute;
+    color: #99e6ff;
+    top: 35%;
+    left: 65%;
+    background: #404040;
+    padding-left: 35px;
+    padding-right: 35px;
+    padding-top: 7.5%;
+    border-radius: 20px;
+    box-shadow: -10px 10px 1px #8c8c8c;
+}
+
+.resumebutton {
+    background-color: #404040;
+    color: #99e6ff;
+    font-size: 1.2vw;
+    font-family: optima, sans-serif;
+    font-weight: 1000;
+    border: none;
+}
+
+/* PROJECTS */
+
+.projects{
+    position: relative;
+    text-align: center;
+}
+
+.imgcontainer {
+    width: cover;
+    overflow: hidden;
+    margin: 0;
+}
+#torontopic2 {
+    display: block;
+    position: relative;
+    width: 100%;
+    z-index: 0;
+    opacity: 0.8;
+    margin: -11% 0;
+}
+.projects .projectsTitle {
+    font-size: 3.1vw;
+    color: #d9b38c;
+    position: absolute;
+    top: 5%;
+    left: 8%;
+}
+
+.snakeGame {   
+    height: 32.5%;
+    width: 10%;
+    text-align: left;
+    font-size: 1vw;
+    position: absolute;
+    color: #99e6ff;
+    top: 35%;
+    left: 20%;
+    background: #404040;
+    padding-left: 35px;
+    padding-right: 35px;
+    padding-top: 30px;
+    border-radius: 20px;
+    box-shadow: -10px 10px 1px #8c8c8c;
 }
 
 ul {
@@ -135,17 +278,6 @@ li a {
 /* Right-aligned section inside the top navigation */
 .topnav-right {
   float: right;
-}
-
-.column {
-    width: 30%;
-    padding: 5px;
-    display: inline-block;
-}
-.row::after{
-    content: "";
-    clear:both;
-    display: table;
 }
 
 p {
