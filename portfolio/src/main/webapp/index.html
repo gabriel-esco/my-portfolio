@@ -2,18 +2,87 @@
 <html>
   <head>
     <meta charset="UTF-8">
-    <title>My Portfolio</title>
+    <title>Gabriel Escobar</title>
     <link rel="stylesheet" href="style.css">
+    <script src="typed_copy.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.11/typed.min.js"></script>
     <script src="script.js"></script>
+
   </head>
   <body>
-    <div id="content">
-      <h1>My Portfolio</h1>
-      <p>This is my portfolio.</p>
-      <p>Click <a href="/hello">here</a> to see content created by server code.</p>
-      <p>Click here to get a random message:</p>
-      <button onclick="addRandomGreeting()">Hello</button>
-      <div id="greeting-container"></div>
+    <div class="topnav">
+        <a class="active" href="#">Gabriel Escobar</a>
+        <a href="#aboutme">About Me</a>
+        <a href="#projects">Projects</a>
+        <a href="#">More</a>         
+        <div class="topnav-right">
+            <a href="https://www.linkedin.com/in/gabriel-escobar-saade-13b8b01a0/" target="_blank">LinkedIn</a>
+            <a href="https://github.com/gabriel-esco" target="_blank">GitHub</a>
+        </div>
+    </div>
+    
+    </div> 
+    <div class="container"></div>
+    <div class="intro">
+        <div class="name">
+            <h1>Gabriel Escobar</h1>
+        </div>
+        <div class="rotatedtext">
+            <h3>Software Development | Industrial Engineering</h3>
+        </div>
+        <img id="pic" src="/images/gabriel3.jpeg" / alt="Picture of me">
+        <p><br><br><br></p>
+    </div>
+    
+    <div class="aboutme">
+        <div id="aboutme"></div>
+        <div class="imgcontainer">
+            <img id="torontopic" src="/images/toronto.jpg" / alt="Picture of Toronto"> 
+        </div>
+        <div class="aboutmetitle">About Me</div>
+        <div class="aboutMeText">
+            <br>My name is Gabriel Escobar. I'm a second year student at the University of Toronto
+            studying Industrial Engineering. <br> I am passionate about Artificial Intelligence and 
+            Machine Learning, and I love computer science. I was born in El Salvador, spent my high school years
+            in Costa Rica, <br>and I now live in Toronto, Ontario. <br><br>
+        </div>
+        <div class="goal">
+            <h6>
+            My goal is to lead the implementation of technology in developing communities. I also hope
+            to create a platform that broadens access to education to those who wish to learn but are not 
+            given adequate means to do so.
+            </h6>
+            </div>
+        <div class="skills">
+            <h5>Python</h5>
+            <h5>Java</h5>
+            <h5>MATLAB</h5>
+            <h5>JavaScript</h5>
+            <h5>HTML/CSS</h5>
+        </div>
+        <div class="resume">
+            <a href="/resources/Gabriel Escobar Resume 2021.pdf" download>
+                <button class="resumebutton">Click to Download My Resume</button>
+            </a>
+        </div>
+
+    </div>
+    <div class="projects">
+        <div id="projects"></div>
+        <div class="imgcontainer">
+            <img id="torontopic2" src="/images/toronto2.jpg" / alt="Picture of Toronto"> 
+        </div>
+        <div class="projectsTitle">Projects</div>
+        <div class="snakeGame"> <h6>We all know and love the Snake game. In this project, I 
+            used PyGame to create a Snake game from scratch, as seen below.
+            To take this project a step further, I created an AI that plays
+            the game, improving with each trial (using reinforcement learning).
+            Here's a look at what the AI looks like over 100 trials into its learning. </h6>
+        </div>
+        <video width="640" height=auto autoplay>
+            <source src="/resources/snakeAI.mp4" type="video/mp4" controls="controls">
+            Your browser does not support this video tag.
+        </video>        
     </div>
   </body>
 </html>
